@@ -52,7 +52,7 @@ public class MarkerFactory {
     static {
         SLF4JServiceProvider provider = LoggerFactory.getProvider();
         if (provider != null) {
-        	provider.initialize();
+        	//provider.initialize(); <- fix of https://jira.qos.ch/browse/SLF4J-463 backported from 2.0.0.alpha1
             MARKER_FACTORY = provider.getMarkerFactory();
         } else {
             Util.report("Failed to find provider");

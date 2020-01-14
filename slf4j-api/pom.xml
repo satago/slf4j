@@ -11,6 +11,7 @@
   </parent>
 
   <artifactId>slf4j-api</artifactId>
+  <version>1.8.0-beta4-SATAGO</version>
 
   <packaging>jar</packaging>
   <name>SLF4J API Module</name>
